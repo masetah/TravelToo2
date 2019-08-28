@@ -4,6 +4,7 @@ const app = express();
 const bodyParser = require ('body-parser');
 const methodOverride = require("method-override");
 const bcrypt =require('bcryptjs');
+require('dotenv').config();
 
 //if workiong on local comment below back in
 // const mongoURI = 'mongodb://localhost:27017/' + 'TravelToo';
