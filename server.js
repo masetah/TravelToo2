@@ -53,11 +53,9 @@ db.on('connected', () => console.log('mongo connected: ', MONGODB_URI));
 db.on('disconnected', () => console.log('mongo disconnected'));
 
 
-app.set('views', './views');
-app.set('view engine', 'ejs');
 //Homepage
 app.get("/", (req,res)=>{
-    res.render('home.ejs');
+    res.render('./views/home.ejs');
   });
 
 //delete session
